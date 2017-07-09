@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		318F44911EFE4D4E00768138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
+		31E06EB11EF96E68009308DD /* ZoomLever.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E06EA81EF96E67009308DD /* ZoomLever.framework */; };
+		31E06EB81EF96E68009308DD /* ZoomLeverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E06EB71EF96E68009308DD /* ZoomLeverTests.swift */; };
+		31E06EBA1EF96E68009308DD /* ZoomLever.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E06EAA1EF96E67009308DD /* ZoomLever.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31E06EBD1EF96E68009308DD /* ZoomLever.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E06EA81EF96E67009308DD /* ZoomLever.framework */; };
+		31E06EBE1EF96E68009308DD /* ZoomLever.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 31E06EA81EF96E67009308DD /* ZoomLever.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
@@ -18,6 +23,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		31E06EB21EF96E68009308DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31E06EA71EF96E67009308DD;
+			remoteInfo = ZoomLever;
+		};
+		31E06EB41EF96E68009308DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = ZoomLever_Example;
+		};
+		31E06EBB1EF96E68009308DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31E06EA71EF96E67009308DD;
+			remoteInfo = ZoomLever;
+		};
 		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
@@ -27,7 +53,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		31E06EC41EF96E68009308DD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				31E06EBE1EF96E68009308DD /* ZoomLever.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		31E06EA81EF96E67009308DD /* ZoomLever.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZoomLever.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31E06EAA1EF96E67009308DD /* ZoomLever.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZoomLever.h; sourceTree = "<group>"; };
+		31E06EAB1EF96E67009308DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31E06EB01EF96E67009308DD /* ZoomLeverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZoomLeverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31E06EB71EF96E68009308DD /* ZoomLeverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomLeverTests.swift; sourceTree = "<group>"; };
+		31E06EB91EF96E68009308DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		412E34B5A336FEDFB1ACD9F3 /* Pods-ZoomLever_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomLever_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZoomLever_Example/Pods-ZoomLever_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5598361143BBD23EB29E920B /* Pods-ZoomLever_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomLever_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZoomLever_Tests/Pods-ZoomLever_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ZoomLever_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomLever_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,20 +86,36 @@
 		607FACE51AFB9204008FA782 /* ZoomLever_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZoomLever_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6513A89EEFF2D039635643D4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		6A2933A66D402780A707EDC0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6513A89EEFF2D039635643D4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6A2933A66D402780A707EDC0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		949D560ECFD74597F2C10A8D /* Pods_ZoomLever_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomLever_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0C498A5E82DF207F733678 /* Pods-ZoomLever_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomLever_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZoomLever_Tests/Pods-ZoomLever_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C5280504C3E62EE93BF0462E /* Pods_ZoomLever_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomLever_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC89876A4D0220F5BF67D4BA /* ZoomLever.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZoomLever.podspec; path = ../ZoomLever.podspec; sourceTree = "<group>"; };
+		CC89876A4D0220F5BF67D4BA /* ZoomLever.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZoomLever.podspec; path = ../ZoomLever.podspec; sourceTree = "<group>"; };
 		D67EEB2CA55E26579185D2A7 /* Pods-ZoomLever_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomLever_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZoomLever_Example/Pods-ZoomLever_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		31E06EA41EF96E67009308DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E06EAD1EF96E67009308DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31E06EB11EF96E68009308DD /* ZoomLever.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCD1AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31E06EBD1EF96E68009308DD /* ZoomLever.framework in Frameworks */,
 				8585D5E7F27774DE3FF22D6C /* Pods_ZoomLever_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,12 +140,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		31E06EA91EF96E67009308DD /* ZoomLever */ = {
+			isa = PBXGroup;
+			children = (
+				31E06EAA1EF96E67009308DD /* ZoomLever.h */,
+				31E06EAB1EF96E67009308DD /* Info.plist */,
+			);
+			path = ZoomLever;
+			sourceTree = "<group>";
+		};
+		31E06EB61EF96E68009308DD /* ZoomLeverTests */ = {
+			isa = PBXGroup;
+			children = (
+				31E06EB71EF96E68009308DD /* ZoomLeverTests.swift */,
+				31E06EB91EF96E68009308DD /* Info.plist */,
+			);
+			path = ZoomLeverTests;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for ZoomLever */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				31E06EA91EF96E67009308DD /* ZoomLever */,
+				31E06EB61EF96E68009308DD /* ZoomLeverTests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				C29A07E8A5D603A4035DF816 /* Pods */,
 				0464996CB040E03A940EE660 /* Frameworks */,
@@ -95,6 +177,8 @@
 			children = (
 				607FACD01AFB9204008FA782 /* ZoomLever_Example.app */,
 				607FACE51AFB9204008FA782 /* ZoomLever_Tests.xctest */,
+				31E06EA81EF96E67009308DD /* ZoomLever.framework */,
+				31E06EB01EF96E67009308DD /* ZoomLeverTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,7 +245,55 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		31E06EA51EF96E67009308DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31E06EBA1EF96E68009308DD /* ZoomLever.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		31E06EA71EF96E67009308DD /* ZoomLever */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31E06EC31EF96E68009308DD /* Build configuration list for PBXNativeTarget "ZoomLever" */;
+			buildPhases = (
+				31E06EA31EF96E67009308DD /* Sources */,
+				31E06EA41EF96E67009308DD /* Frameworks */,
+				31E06EA51EF96E67009308DD /* Headers */,
+				31E06EA61EF96E67009308DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZoomLever;
+			productName = ZoomLever;
+			productReference = 31E06EA81EF96E67009308DD /* ZoomLever.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		31E06EAF1EF96E67009308DD /* ZoomLeverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31E06EC51EF96E68009308DD /* Build configuration list for PBXNativeTarget "ZoomLeverTests" */;
+			buildPhases = (
+				31E06EAC1EF96E67009308DD /* Sources */,
+				31E06EAD1EF96E67009308DD /* Frameworks */,
+				31E06EAE1EF96E67009308DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31E06EB31EF96E68009308DD /* PBXTargetDependency */,
+				31E06EB51EF96E68009308DD /* PBXTargetDependency */,
+			);
+			name = ZoomLeverTests;
+			productName = ZoomLeverTests;
+			productReference = 31E06EB01EF96E67009308DD /* ZoomLeverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		607FACCF1AFB9204008FA782 /* ZoomLever_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "ZoomLever_Example" */;
@@ -172,10 +304,12 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				1F08C8CE9A9237C4CCB45EFA /* [CP] Embed Pods Frameworks */,
 				063B875294BB4287FE18FD9F /* [CP] Copy Pods Resources */,
+				31E06EC41EF96E68009308DD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				31E06EBC1EF96E68009308DD /* PBXTargetDependency */,
 			);
 			name = ZoomLever_Example;
 			productName = ZoomLever;
@@ -209,12 +343,23 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
+					31E06EA71EF96E67009308DD = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					31E06EAF1EF96E67009308DD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KRBYUFMTMK;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = KRBYUFMTMK;
 						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -239,16 +384,32 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* ZoomLever_Example */,
 				607FACE41AFB9204008FA782 /* ZoomLever_Tests */,
+				31E06EA71EF96E67009308DD /* ZoomLever */,
+				31E06EAF1EF96E67009308DD /* ZoomLeverTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		31E06EA61EF96E67009308DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E06EAE1EF96E67009308DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCE1AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				318F44911EFE4D4E00768138 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -357,6 +518,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		31E06EA31EF96E67009308DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E06EAC1EF96E67009308DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31E06EB81EF96E68009308DD /* ZoomLeverTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCC1AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -377,6 +553,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		31E06EB31EF96E68009308DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31E06EA71EF96E67009308DD /* ZoomLever */;
+			targetProxy = 31E06EB21EF96E68009308DD /* PBXContainerItemProxy */;
+		};
+		31E06EB51EF96E68009308DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* ZoomLever_Example */;
+			targetProxy = 31E06EB41EF96E68009308DD /* PBXContainerItemProxy */;
+		};
+		31E06EBC1EF96E68009308DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31E06EA71EF96E67009308DD /* ZoomLever */;
+			targetProxy = 31E06EBB1EF96E68009308DD /* PBXContainerItemProxy */;
+		};
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* ZoomLever_Example */;
@@ -404,6 +595,97 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		31E06EBF1EF96E68009308DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ZoomLever/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nadegiri.ZoomLever;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		31E06EC01EF96E68009308DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ZoomLever/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nadegiri.ZoomLever;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		31E06EC11EF96E68009308DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KRBYUFMTMK;
+				INFOPLIST_FILE = ZoomLeverTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nadegiri.ZoomLeverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZoomLever_Example.app/ZoomLever_Example";
+			};
+			name = Debug;
+		};
+		31E06EC21EF96E68009308DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = KRBYUFMTMK;
+				INFOPLIST_FILE = ZoomLeverTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nadegiri.ZoomLeverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZoomLever_Example.app/ZoomLever_Example";
+			};
+			name = Release;
+		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -443,7 +725,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -483,7 +765,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -496,7 +778,9 @@
 			baseConfigurationReference = D67EEB2CA55E26579185D2A7 /* Pods-ZoomLever_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KRBYUFMTMK;
 				INFOPLIST_FILE = ZoomLever/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -510,7 +794,9 @@
 			baseConfigurationReference = 412E34B5A336FEDFB1ACD9F3 /* Pods-ZoomLever_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KRBYUFMTMK;
 				INFOPLIST_FILE = ZoomLever/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -558,6 +844,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		31E06EC31EF96E68009308DD /* Build configuration list for PBXNativeTarget "ZoomLever" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31E06EBF1EF96E68009308DD /* Debug */,
+				31E06EC01EF96E68009308DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31E06EC51EF96E68009308DD /* Build configuration list for PBXNativeTarget "ZoomLeverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31E06EC11EF96E68009308DD /* Debug */,
+				31E06EC21EF96E68009308DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "ZoomLever" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -52,6 +52,16 @@
                ReferencedContainer = "container:ZoomLever.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "31E06EAF1EF96E67009308DD"
+               BuildableName = "ZoomLeverTests.xctest"
+               BlueprintName = "ZoomLeverTests"
+               ReferencedContainer = "container:ZoomLever.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

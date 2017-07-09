@@ -1,25 +1,73 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ZoomLever_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8m-ZL-Llo">
+                                <rect key="frame" x="133" y="186" width="108" height="107.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Kt-Ap-5VR">
+                                <rect key="frame" x="16" y="427" width="343" height="10"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghR-eC-xSF">
+                                        <rect key="frame" x="165.5" y="-13" width="12" height="36"/>
+                                        <color key="backgroundColor" red="0.93333333730697632" green="0.35294118523597717" blue="0.46666666865348816" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="3Zb-15-IkP"/>
+                                            <constraint firstAttribute="width" constant="12" id="a0x-Xq-XkM"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.49019607900000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="4ru-wH-jcg"/>
+                                    <constraint firstItem="ghR-eC-xSF" firstAttribute="centerY" secondItem="6Kt-Ap-5VR" secondAttribute="centerY" id="NbG-bV-bhg"/>
+                                    <constraint firstItem="ghR-eC-xSF" firstAttribute="centerX" secondItem="6Kt-Ap-5VR" secondAttribute="centerX" id="vbx-up-bgi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="n8m-ZL-Llo" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-100" id="Lec-Uk-ghj"/>
+                            <constraint firstItem="6Kt-Ap-5VR" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="cAd-oL-fG8"/>
+                            <constraint firstItem="6Kt-Ap-5VR" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="100" id="cOm-Vx-MyA"/>
+                            <constraint firstItem="n8m-ZL-Llo" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="nvW-mW-Ss5"/>
+                            <constraint firstItem="6Kt-Ap-5VR" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="rqz-1t-Wsn"/>
+                            <constraint firstItem="6Kt-Ap-5VR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="wlw-zp-c5w"/>
+                        </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="lever" destination="ghR-eC-xSF" id="sT2-QR-iBC"/>
+                        <outlet property="measureView" destination="6Kt-Ap-5VR" id="pMw-1Z-1TX"/>
+                        <outlet property="valueLabel" destination="n8m-ZL-Llo" id="kZy-rc-8oS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-183.19999999999999" y="34.632683658170919"/>
         </scene>
     </scenes>
 </document>
