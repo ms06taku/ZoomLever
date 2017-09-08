@@ -8,11 +8,25 @@
 
 import UIKit
 
+protocol ZoomLeverDelegate: class {
+    // どんだけ引っ張っているか
+    // rate (-1.0 ~ 1.0)
+    func rateChanged(rate: CGFloat)
+
+    // どんだけ引っ張り続けているか
+    func valueChanged(value: CGFloat)
+
+}
+
 class ZoomLever: UIView {
 
     private var contentView: UIView? = nil
     @IBOutlet var measureView: UIView!
     @IBOutlet private weak var leverView: UIView!
+    var delegate: ZoomLeverDelegate? = nil
+    var isPulling: Bool = false
+    var rate: CGFloat = 0.0
+    var value: CGFloat = 0.0
     
     // MARK: - INIT
     
@@ -52,6 +66,13 @@ class ZoomLever: UIView {
             self.addConstraint($0)
         }
         
+        // 引っ張っている最中、値に応じたvelocityでvalueを加算していく
+        Timer.scheduledTimer(timeInterval: 0.1,
+                             target: self,
+                             selector: #selector(ZoomLever.calcValue),
+                             userInfo: nil,
+                             repeats: true)
+        
         return
     }
     
@@ -65,6 +86,8 @@ class ZoomLever: UIView {
                 }
             }
         }
+        
+        isPulling = true
         
         // lever transform
         UIView.animate(withDuration: 0.06, animations: { () -> Void in
@@ -100,11 +123,17 @@ class ZoomLever: UIView {
         }
         
         leverView.frame = frame
-        let value = (leverView.frame.origin.x + leverView.frame.width / 2) - measureView.frame.width / 2
-        print (value)
+        let diff = (leverView.frame.origin.x + leverView.frame.width / 2) - measureView.frame.width / 2
+        rate = diff / 100
+        
+        //self.delegate?.valueChanged(value: diff)
+        self.delegate?.rateChanged(rate: rate)
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        isPulling = false
+        
         UIView.animate(withDuration: 0.1, animations: { () -> Void in
             self.leverView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         }){(Bool) -> Void in
@@ -112,4 +141,12 @@ class ZoomLever: UIView {
         }
     }
     
+    // MARK: - TIMER METHODS
+    
+    func calcValue(){
+        if isPulling{
+            value += (1 * rate)
+            self.delegate?.valueChanged(value: value)
+        }
+    }
 }

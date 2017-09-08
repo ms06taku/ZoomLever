@@ -8,19 +8,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ZoomLeverDelegate {
     
-    @IBOutlet weak var zoomLever: ZoomLever!
+    @IBOutlet weak var zoomLever: ZoomLever!{
+        didSet{
+            zoomLever.delegate = self
+        }
+    }
+    @IBOutlet private weak var rateLabel: UILabel!{
+        didSet{
+            rateLabel.text = "0.0"
+        }
+    }
     @IBOutlet private weak var valueLabel: UILabel!{
         didSet{
             valueLabel.text = "0.0"
         }
     }
     
-    @IBOutlet weak var label1: UILabel!
-    @IBOutlet weak var label2: UILabel!
-    @IBOutlet weak var label3: UILabel!
-    @IBOutlet weak var label4: UILabel!
+    // MARK: - view
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +34,16 @@ class ViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    // MARK: - delegate
+    
+    func rateChanged(rate: CGFloat) {
+        rateLabel.text = String(describing: rate)
+    }
+    
+    func valueChanged(value: CGFloat) {
+        valueLabel.text = String(describing: value)
     }
 }
 
