@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		318F44911EFE4D4E00768138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
+		319844691F623682009B5DC7 /* ZoomLever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319844681F623682009B5DC7 /* ZoomLever.swift */; };
+		3198446B1F6236BF009B5DC7 /* ZoomLever.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3198446A1F6236BF009B5DC7 /* ZoomLever.xib */; };
 		31E06EB11EF96E68009308DD /* ZoomLever.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E06EA81EF96E67009308DD /* ZoomLever.framework */; };
 		31E06EB81EF96E68009308DD /* ZoomLeverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E06EB71EF96E68009308DD /* ZoomLeverTests.swift */; };
 		31E06EBA1EF96E68009308DD /* ZoomLever.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E06EAA1EF96E67009308DD /* ZoomLever.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -68,6 +70,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		319844681F623682009B5DC7 /* ZoomLever.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomLever.swift; sourceTree = "<group>"; };
+		3198446A1F6236BF009B5DC7 /* ZoomLever.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZoomLever.xib; sourceTree = "<group>"; };
 		31E06EA81EF96E67009308DD /* ZoomLever.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZoomLever.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31E06EAA1EF96E67009308DD /* ZoomLever.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZoomLever.h; sourceTree = "<group>"; };
 		31E06EAB1EF96E67009308DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -187,6 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				319844681F623682009B5DC7 /* ZoomLever.swift */,
+				3198446A1F6236BF009B5DC7 /* ZoomLever.xib */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -410,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				318F44911EFE4D4E00768138 /* Main.storyboard in Resources */,
+				3198446B1F6236BF009B5DC7 /* ZoomLever.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -538,6 +545,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				319844691F623682009B5DC7 /* ZoomLever.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
