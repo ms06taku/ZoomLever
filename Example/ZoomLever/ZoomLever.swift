@@ -136,6 +136,10 @@ class ZoomLever: UIView {
         
         UIView.animate(withDuration: 0.1, animations: { () -> Void in
             self.leverView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+            
+            // 離したら0に戻す
+            self.leverView.center = self.measureView.center
+            
         }){(Bool) -> Void in
             
         }
