@@ -39,11 +39,11 @@ class ViewController: UIViewController, ZoomLeverDelegate {
     // MARK: - delegate
     
     func rateChanged(rate: CGFloat) {
-        rateLabel.text = String(describing: rate)
+        rateLabel.text = String(format:"%0.1f", rate)
     }
     
     func valueChanged(value: CGFloat) {
-        valueLabel.text = String(describing: value)
+        valueLabel.text = String(format:"%0.1f", value)
     }
 }
 
