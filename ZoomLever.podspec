@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Taku Himeno/ZoomLever'
+  s.homepage         = 'https://github.com/ms06taku/ZoomLever'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Taku Himeno' => 'ms06taku@gmail.com' }
-  s.source           = { :git => 'https://github.com/Taku Himeno/ZoomLever.git', :tag => s.version.to_s }
+  s.author           = { 'ms06taku' => 'ms06taku@gmail.com' }
+  s.source           = { :git => 'https://github.com/ms06taku/ZoomLever.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
