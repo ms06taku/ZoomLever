@@ -1,6 +1,6 @@
 # ZoomLever
 
-[![CI Status](http://img.shields.io/travis/ms06taku/ZoomLever.svg?style=flat)](https://travis-ci.org/Taku Himeno/ZoomLever)
+[![CI Status](http://img.shields.io/travis/ms06taku/ZoomLever.svg?style=flat)](https://travis-ci.org/ms06taku/ZoomLever)
 [![Version](https://img.shields.io/cocoapods/v/ZoomLever.svg?style=flat)](http://cocoapods.org/pods/ZoomLever)
 [![License](https://img.shields.io/cocoapods/l/ZoomLever.svg?style=flat)](http://cocoapods.org/pods/ZoomLever)
 [![Platform](https://img.shields.io/cocoapods/p/ZoomLever.svg?style=flat)](http://cocoapods.org/pods/ZoomLever)
