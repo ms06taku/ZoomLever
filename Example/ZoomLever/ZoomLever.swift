@@ -9,17 +9,12 @@
 import UIKit
 
 protocol ZoomLeverDelegate: class {
-    // どんだけ引っ張っているか
     // rate (-1.0 ~ 1.0)
     func rateChanged(rate: CGFloat)
-
-    // どんだけ引っ張り続けているか
     func valueChanged(value: CGFloat)
-
 }
 
 class ZoomLever: UIView {
-
     private var contentView: UIView? = nil
     @IBOutlet var measureView: UIView!
     @IBOutlet private weak var leverView: UIView!
@@ -133,13 +128,14 @@ class ZoomLever: UIView {
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         isPulling = false
+        rate = 0
+        self.delegate?.rateChanged(rate: rate)
         
         UIView.animate(withDuration: 0.1, animations: { () -> Void in
             self.leverView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
             
             // 離したら0に戻す
             self.leverView.center = self.measureView.center
-            
         }){(Bool) -> Void in
             
         }
