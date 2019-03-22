@@ -14,7 +14,7 @@ protocol ZoomLeverDelegate: class {
     func valueChanged(value: CGFloat)
 }
 
-class ZoomLever: UIView {
+public class ZoomLever: UIView {
     private var contentView: UIView? = nil
     @IBOutlet var measureView: UIView!
     @IBOutlet private weak var leverView: UIView!
@@ -73,7 +73,7 @@ class ZoomLever: UIView {
     
     // MARK: - TOUCH
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
             if let touchedView = touch.view {
                 if touchedView != leverView {
@@ -92,7 +92,7 @@ class ZoomLever: UIView {
         }
     }
     
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
             if let touchedView = touch.view {
                 if touchedView != leverView {
@@ -125,7 +125,7 @@ class ZoomLever: UIView {
         self.delegate?.rateChanged(rate: rate)
     }
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         isPulling = false
         rate = 0
