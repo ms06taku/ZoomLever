@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ZoomLeverDelegate: class {
+public protocol ZoomLeverDelegate: class {
     // rate (-1.0 ~ 1.0)
     func rateChanged(rate: CGFloat)
     func valueChanged(value: CGFloat)
