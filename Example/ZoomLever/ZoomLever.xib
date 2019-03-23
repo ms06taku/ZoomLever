@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12121"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZoomLever" customModule="ZoomLever_Example" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZoomLever" customModule="ZoomLever" customModuleProvider="target">
             <connections>
                 <outlet property="leverView" destination="fV6-ng-oUK" id="V3Y-TH-XBG"/>
                 <outlet property="measureView" destination="j8Q-Kc-7HW" id="eDh-AZ-m6C"/>
@@ -20,7 +19,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j8Q-Kc-7HW">
-                    <rect key="frame" x="0.0" y="14.5" width="375" height="10"/>
+                    <rect key="frame" x="0.0" y="15" width="375" height="10"/>
                     <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="10" id="Spu-kG-mgK"/>
@@ -34,7 +33,6 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="fV6-ng-oUK" secondAttribute="bottom" id="GRm-lc-v9B"/>
                 <constraint firstItem="fV6-ng-oUK" firstAttribute="centerX" secondItem="ICL-Y8-fvj" secondAttribute="centerX" id="Q5x-X3-r1O"/>

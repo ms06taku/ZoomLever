@@ -16,9 +16,9 @@ public protocol ZoomLeverDelegate: class {
 
 public class ZoomLever: UIView {
     private var contentView: UIView? = nil
-    @IBOutlet var measureView: UIView!
-    @IBOutlet private weak var leverView: UIView!
-    var delegate: ZoomLeverDelegate? = nil
+    @IBOutlet public weak var measureView: UIView!
+    @IBOutlet public weak var leverView: UIView!
+    public var delegate: ZoomLeverDelegate? = nil
     var isPulling: Bool = false
     var rate: CGFloat = 0.0
     var value: CGFloat = 0.0
