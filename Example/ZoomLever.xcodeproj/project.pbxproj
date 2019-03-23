@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3114756B2245C4AE000EA613 /* ZoomLever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319844681F623682009B5DC7 /* ZoomLever.swift */; };
+		3114756C2245C4B5000EA613 /* ZoomLever.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3198446A1F6236BF009B5DC7 /* ZoomLever.xib */; };
 		318F44911EFE4D4E00768138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		319844691F623682009B5DC7 /* ZoomLever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319844681F623682009B5DC7 /* ZoomLever.swift */; };
 		3198446B1F6236BF009B5DC7 /* ZoomLever.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3198446A1F6236BF009B5DC7 /* ZoomLever.xib */; };
@@ -402,6 +404,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3114756C2245C4B5000EA613 /* ZoomLever.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +533,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3114756B2245C4AE000EA613 /* ZoomLever.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -786,6 +790,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D67EEB2CA55E26579185D2A7 /* Pods-ZoomLever_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KRBYUFMTMK;
 				INFOPLIST_FILE = ZoomLever/Info.plist;
@@ -802,6 +807,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 412E34B5A336FEDFB1ACD9F3 /* Pods-ZoomLever_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KRBYUFMTMK;
 				INFOPLIST_FILE = ZoomLever/Info.plist;
