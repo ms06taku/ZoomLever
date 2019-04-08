@@ -48,7 +48,7 @@ public class ZoomLever: UIView {
         self.addSubview(contentView)
         
         // add constraints
-        let layouts: [NSLayoutAttribute] = [.top, .bottom, .leading, .trailing]
+        let layouts: [NSLayoutConstraint.Attribute] = [.top, .bottom, .leading, .trailing]
         layouts.map {
             NSLayoutConstraint(item: self,
                                attribute: $0,
@@ -143,7 +143,7 @@ public class ZoomLever: UIView {
     
     // MARK: - TIMER METHODS
     
-    func calcValue(){
+    @objc func calcValue(){
         if isPulling{
             value += (1 * rate)
             self.delegate?.valueChanged(value: value)
